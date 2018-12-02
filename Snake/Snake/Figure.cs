@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace Snake
 {
-    abstract  class Line
+    abstract  class Figure
     {
         protected List<Point> pList;
 
