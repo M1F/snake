@@ -17,5 +17,10 @@ namespace Snake
             Console.SetCursorPosition(x, y);
             Console.Write(sym);
         }
+
+        public override string ToString()
+        {
+            return "x = " + x + ", Y = " + y + ", Symbol = " + sym;
+        }
     }
 }
