@@ -32,24 +32,30 @@ namespace Snake
             Console.Write(sym);
         }
 
-        public void Move(int i, Direction direction)
+        public void Move(int ofset, Direction direction)
         {
             if (direction == Direction.left)
             {
-                x = x-i;
+                x = x-ofset;
             }
             if (direction == Direction.up)
             {
-                y = y-i;
+                y = y-ofset;
             }
             if (direction == Direction.right)
             {
-                x = x+i;
+                x = x+ofset;
             }
-            else
+            if (direction == Direction.down)
             {
-                y = y+i;
+                y = y+ofset;
             }
+        }
+
+        internal void Clear()
+        {
+            sym = ' ';
+            Draw();
         }
 
         public override string ToString()
