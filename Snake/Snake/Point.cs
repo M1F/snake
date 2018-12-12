@@ -63,9 +63,9 @@ namespace Snake
             return "x = " + x + ", Y = " + y + ", Symbol = " + sym;
         }
 
-        internal bool isHit(Point food)
+        internal bool isHit(Point somePoint)
         {
-            return this.x == food.x && this.y == food.y;
+            return this.x == somePoint.x && this.y == somePoint.y;
         }
     }
 }
